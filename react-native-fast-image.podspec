@@ -1,8 +1,8 @@
 require 'json'
 
-package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
-
 Pod::Spec.new do |s|
+
+  package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
   s.name = "react-native-fast-image"
   s.version = package['version']
   s.summary = "🚩 FastImage, performant React Native image component."
@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
 
   s.source = { :git => "https://github.com/DylanVann/react-native-fast-image.git" }
   s.source_files = "ios/**/*.{h,m}"
-  s.exclude_files = "ios/Vendor/**/*.{h,m}"
 
   s.dependency 'React'
   s.dependency 'SDRNWebImage'
