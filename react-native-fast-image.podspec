@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m}"
 
   s.dependency 'React'
-  pod 'AFNetworking', :git => 'https://github.com/EijiCcccc/SDWebImage.git'
+  pod 'SDWebImage', :git => 'https://github.com/EijiCcccc/SDWebImage.git'
 end
