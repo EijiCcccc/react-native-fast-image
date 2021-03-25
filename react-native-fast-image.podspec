@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.exclude_files = "ios/Vendor/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'SDRNWebImage'
+  s.dependency 'SDWebImage'
 end
